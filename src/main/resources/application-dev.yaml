@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: testgpttovox
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/test
+    username: xxxx
+    password: xxxx
+
+create:
+  create-path: xxxx/create
+  items-path: xxxx/item
+
+voicevox:
+ url: http://localhost:50021/audio_query
+ synthesis-url: http://localhost:50021/synthesis
+
+nemo:
+ url: http://192.168.12.47:50121/audio_query
+ synthesisUrl: http://192.168.12.47:50121/synthesis
+
+unsplash:
+  url: https://api.unsplash.com/search/photos?query=%s&client_id=%s
+  access-key: xxxx
+  secret-key: xxxx
+
+google:
+  url: https://translation.googleapis.com/language/translate/v2
+  api-key: xxxx
